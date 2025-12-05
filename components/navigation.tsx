@@ -13,11 +13,11 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Contact", href: "#contact" },
+    { label: "Sobre", href: "#about" },
+    { label: "Habilidades", href: "#skills" },
+    { label: "Experiências", href: "#experience" },
+    // { label: "Projects", href: "#projects" },
+    { label: "Contato", href: "#contact" },
   ]
 
   return (
@@ -26,7 +26,6 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-white hover:text-blue-400 transition-colors">
-            &lt;DATA/&gt;
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,7 +47,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
               href="/projects"
               className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
             >
-              GitHub Projects
+              Projetos GitHub
             </Link>
           </div>
 
@@ -75,7 +74,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
               href="/projects"
               className="block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors text-center"
             >
-              GitHub Projects
+              Projetos GitHub
             </Link>
           </div>
         )}

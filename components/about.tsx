@@ -2,9 +2,9 @@
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 md:px-12 lg:px-16 bg-slate-900/30">
+    <section id="Sobre" className="py-20 px-6 md:px-12 lg:px-16 bg-slate-900/30">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12">About Me</h2>
+        <h2 className="text-4xl font-bold text-white mb-12">Sobre</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-4">

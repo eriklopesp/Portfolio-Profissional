@@ -19,24 +19,24 @@ export default function Home() {
         <section className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20 animate-slide-in">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">Data Engineer</h1>
-              <p className="text-xl text-slate-300 mb-2">Transforming Data into Insights</p>
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">Engenheiro de Dados</h1>
+              <p className="text-xl text-slate-300 mb-2">Criação de arquiteturas de dados em cloud, datasets, micro serviços e Analytics.</p>
               <p className="text-slate-400 mb-8">
-                Specialized in building scalable data pipelines, data warehousing, and analytics infrastructure. I help
-                companies turn raw data into actionable business intelligence.
+                Especializado na construção de pipelines de dados escaláveis, data warehouses e infraestrutura de analytics. 
+                Ajudo empresas a transformar dados brutos em inteligência de negócios.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <Link
                   href="#projects"
                   className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
                 >
-                  View Projects <ChevronRight size={20} />
+                  Projetos <ChevronRight size={20} />
                 </Link>
                 <Link
                   href="#contact"
                   className="px-6 py-3 border border-slate-500 hover:border-slate-300 text-slate-300 hover:text-white rounded-lg font-semibold transition-colors"
                 >
-                  Get in Touch
+                  Entre em contato
                 </Link>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
-                    <span className="text-slate-400 text-sm">AWS | Google Cloud | Snowflake</span>
+                    <span className="text-slate-400 text-sm">AWS | Google Cloud | Databricks</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
@@ -70,23 +70,13 @@ export default function Home() {
         <section id="about" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:col-span-1">
-              <h2 className="text-3xl font-bold text-white mb-2">About</h2>
+              <h2 className="text-3xl font-bold text-white mb-2">Sobre mim</h2>
               <div className="w-12 h-1 bg-blue-600 rounded-full"></div>
             </div>
             <div className="md:col-span-2 space-y-4">
               <p className="text-slate-300 leading-relaxed">
-                I'm a passionate Data Engineer with 5+ years of experience designing and implementing robust data
-                infrastructure solutions. My expertise spans the entire data lifecycle, from data collection and
-                ingestion to processing, storage, and analytics.
-              </p>
-              <p className="text-slate-300 leading-relaxed">
-                I specialize in building cloud-native data platforms, creating efficient ETL/ELT pipelines, and
-                optimizing data warehouse architectures. I'm proficient in modern data stack tools and cloud platforms,
-                helping teams scale their data operations.
-              </p>
-              <p className="text-slate-300 leading-relaxed">
-                Currently focused on data architecture patterns, real-time processing, and enabling self-service
-                analytics for organizations to leverage their data effectively.
+                Atualmente atuando na implementação de soluções sólidas de infraestrutura de dados. Minha atuação cobre todo o ciclo de vida dos dados — desde a coleta e ingestão, passando pelo processamento e tratamento de dados estruturados e não estruturados (como JSON e XML), até armazenamento, modelagem e disponibilização para analytics.
+                Tenho experiência prática construindo pipelines de dados eficientes (ETL/ELT) em Python e MySQL, além de trabalhar na organização e transformação de dados para suportar decisões de negócio. Atualmente, estou aprofundando conhecimentos em cloud computing, especialmente AWS, com foco em arquitetura de dados moderna e escalável.
               </p>
             </div>
           </div>
@@ -94,14 +84,14 @@ export default function Home() {
 
         {/* Skills Section */}
         <section id="skills" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold text-white mb-12">Technical Skills</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Habilidades</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Languages", skills: ["Python", "SQL", "Scala", "PySpark"] },
-              { title: "Data Platforms", skills: ["Apache Spark", "Hadoop", "Kafka", "Airflow"] },
-              { title: "Cloud Services", skills: ["AWS", "Google Cloud", "Azure", "Snowflake"] },
-              { title: "Data Warehousing", skills: ["BigQuery", "Redshift", "Snowflake", "Postgres"] },
-              { title: "BI & Analytics", skills: ["Tableau", "Looker", "Power BI", "Grafana"] },
+              { title: "Linguagens", skills: ["Python", "SQL", "PySpark", "JavaScript"] },
+              { title: "Data Platforms", skills: ["Apache Spark", "Hadoop", "Kafka", "Databricks"] },
+              { title: "Cloud Services", skills: ["AWS", "Google Cloud", "Azure"] },
+              { title: "Data Warehousing", skills: ["BigQuery", "Redshift", "Postgres"] }, 
+              { title: "BI & Analytics", skills: ["Looker", "Power BI", "Grafana"] },
               { title: "Tools & Frameworks", skills: ["dbt", "Airflow", "Docker", "Git"] },
             ].map((category, idx) => (
               <div
@@ -124,29 +114,29 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold text-white mb-12">Experience</h2>
+          <h2 className="text-3xl font-bold text-white mb-12">Experiências</h2>
           <div className="space-y-8">
             {[
               {
-                title: "Senior Data Engineer",
-                company: "TechCorp Analytics",
-                period: "2022 - Present",
+                title: "Analista de Dados PL",
+                company: "Grupo PLL",
+                period: "2024 - 2025",
                 description:
-                  "Leading data architecture initiatives and managing a team of 4 engineers. Designed and deployed a cloud-native data platform processing 10TB+ daily.",
+                  "Desenvolvimento de dashboards em Power BI ou Python, utilizando DAX, M ou Numpy para construção de análises de acordo com o contexto. Desenvolvimento de relatórios em MySQL ou Postgres, utilizando conceitos como Tuning SQL visando eficiência/performance de querys, que forneçam suporte a longo prazo em relação a ingestão de dados, que rodem de maneira automatizada sem gerar gargalos em atualizações. Versionamento e governança de códigos no GitHub, com documentação que evidencia processos e aspectos técnicos da construção de cada solução de dados. Responsável pela construção de pipelines completos, da extração de dados através de API’s, ERP interno ou Banco de Dados, até manipulação através de Python pandas ou MySQL, ingestão e visualização, em métricas de BI para construção de KPI’s que norteie o operacional em suas tomadas de decisão, utilizando a massa de dados como fonte de informação. Participação de meets e kick-offs para alinhamento de estratégias internas, e reuniões com stakeholders para alinhamentos de expectativa/entrega/roadmap.."
               },
               {
-                title: "Data Engineer",
-                company: "DataFlow Solutions",
-                period: "2020 - 2022",
+                title: "Analista de Business Intelligence",
+                company: "MarcoMKT",
+                period: "2022 - 2024",
                 description:
-                  "Built and optimized ETL pipelines using Python and Apache Spark. Reduced data processing time by 60% through architecture improvements.",
+                  "Líder técnico do BI da Brother Brasil, responsável pela melhoria contínua de processos comerciais e criação de storytellings visuais com ferramentas de DataViz. Eu tinha uma participação muito ativa nas decisões de negócio, o foco era embasar tomadas de decisão e orientar de maneira documentada os processos operacionais e administrativos com agregações e análises que gerassem insights de caráter decisório. Análises comparativas, de propensão, gráfico de pareto, estatística, entre outros métodos para criação de KPI’s estratégicos que suportava a operação. Para além da parte conceitual, a parte técnica para a construção desses relatórios envolvia muito SQL Server, Python (Pandas), Linguagem M, Power BI (DAX) e API’S para extração de dados. Todo o processo de manipulação de dados, carregamento e disponibilização em banco era feito via SQL Server e Python, de acordo com cada necessidade.",
               },
               {
-                title: "Junior Data Engineer",
-                company: "StartUp Data",
-                period: "2019 - 2020",
+                title: "Assistente de Business Intelligence",
+                company: "Allis Field Marketing",
+                period: "2021 - 2022",
                 description:
-                  "Developed initial data warehouse infrastructure and implemented data quality frameworks using SQL and Python.",
+                  "Apoio em projetos de automação de dashboards, criação de pesquisas em sistemas de roteirização e relatórios analíticos em SQL, Excel, Power BI com foco em insights operacionais. Suporte em modelagem e qualidade de dados, garantindo consistência e normalização. Assistência ao Analista de BI em demandas de tratamento de dados e estruturação de métricas.",
               },
             ].map((exp, idx) => (
               <div key={idx} className="border-l-2 border-blue-600 pl-6 py-2">
@@ -160,9 +150,9 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
+        {/* <section id="projects" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
           <div className="flex items-center justify-between mb-12">
-            <h2 className="text-3xl font-bold text-white">Featured Projects</h2>
+            <h2 className="text-3xl font-bold text-white">Projetos em destaque</h2>
             <Link
               href="/projects"
               className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold group"
@@ -212,25 +202,24 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section id="contact" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
           <div className="bg-gradient-to-r from-blue-900/30 to-emerald-900/30 border border-blue-500/30 rounded-xl p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Vamos trabalhar juntos!</h2>
             <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-              I'm always interested in discussing new projects and opportunities in data engineering. Feel free to reach
-              out!
+              Sempre estou aberto a discutir novos projetos e oportunidades na área de dados. Sinta-se à vontade para entrar em contato!
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a
-                href="mailto:contact@dataengineer.com"
+                href="eriklopesp.ti@gmail.com"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
               >
-                <Mail size={20} /> Send Email
+                <Mail size={20} /> E-mail
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/eriklopesp/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border border-slate-500 hover:border-slate-300 text-slate-300 hover:text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
@@ -245,12 +234,12 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-slate-800 px-6 md:px-12 lg:px-16 py-12">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-slate-400 text-sm">© 2025 Data Engineer Portfolio. All rights reserved.</div>
+          <div className="text-slate-400 text-sm">© 2025 Erik Portfolio. All rights reserved.</div>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://github.com/eriklopesp" className="text-slate-400 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/eriklopesp/" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
             <a href="#" className="text-slate-400 hover:text-white transition-colors">

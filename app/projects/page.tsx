@@ -44,53 +44,9 @@ export default function ProjectsPage() {
       github: "https://github.com",
       metrics: ["75% query time reduction", "40% cost savings", "500B+ records"],
     },
-    {
-      id: 3,
-      title: "ETL Orchestration Framework",
-      description: "Apache Airflow-based orchestration platform for complex data workflows",
-      fullDescription:
-        "Developed a comprehensive ETL orchestration framework using Apache Airflow managing 1000+ daily DAGs. Implemented auto-scaling, monitoring, and self-healing capabilities.",
-      technologies: ["Apache Airflow", "Python", "PostgreSQL", "Kubernetes", "Docker"],
-      image: "/workflow-orchestration.jpg",
-      github: "https://github.com",
-      metrics: ["1000+ DAGs", "99.9% reliability", "< 1min deploy"],
-    },
-    {
-      id: 4,
-      title: "Data Quality Platform",
-      description: "Automated data quality monitoring and anomaly detection system",
-      fullDescription:
-        "Built a comprehensive data quality platform with automated testing, anomaly detection using machine learning, and real-time alerting. Integrated with existing data infrastructure.",
-      technologies: ["Python", "Great Expectations", "Machine Learning", "SQL", "Grafana"],
-      image: "/quality-monitoring-dashboard.jpg",
-      github: "https://github.com",
-      metrics: ["1000+ data checks", "95% anomaly detection", "Real-time alerts"],
-    },
-    {
-      id: 5,
-      title: "Lake House Architecture",
-      description: "Unified data platform combining data lake and warehouse capabilities",
-      fullDescription:
-        "Implemented a modern lake house architecture using Delta Lake on Apache Spark and Snowflake. Enabled analytics and ML workloads on unified data platform.",
-      technologies: ["Delta Lake", "Apache Spark", "Snowflake", "Python", "MLflow"],
-      image: "/data-architecture.jpg",
-      github: "https://github.com",
-      metrics: ["PB-scale storage", "100+ users", "10x cost efficiency"],
-    },
-    {
-      id: 6,
-      title: "Analytics Dashboard",
-      description: "Self-service BI platform with real-time analytics and insights",
-      fullDescription:
-        "Created a self-service analytics platform allowing business users to explore data in real-time. Integrated with multiple data sources and provided pre-built reports and dashboards.",
-      technologies: ["Looker", "BigQuery", "SQL", "JavaScript", "D3.js"],
-      image: "/analytics-dashboard.png",
-      github: "https://github.com",
-      metrics: ["500+ users", "1000+ reports", "99.5% uptime"],
-    },
   ]
 
-  const technologies = ["All", "Python", "SQL", "Spark", "AWS", "GCP", "Kubernetes"]
+  const technologies = ["Todos", "Python", "SQL", "Spark", "AWS", "GCP", "Docker"]
   const filteredProjects = projects
 
   return (
@@ -104,11 +60,10 @@ export default function ProjectsPage() {
             <Link href="/" className="text-slate-400 hover:text-white transition-colors">
               <ArrowLeft size={24} />
             </Link>
-            <h1 className="text-5xl font-bold text-white">Projects from GitHub</h1>
+            <h1 className="text-5xl font-bold text-white">Projetos GitHub</h1>
           </div>
           <p className="text-xl text-slate-400 max-w-3xl">
-            A collection of my recent data engineering projects and contributions. Explore the code, architecture
-            decisions, and impact of each project.
+            Uma coleção dos meus projetos e contribuições recentes em engenharia de dados. Explore o código, decisões de arquitetura e o impacto de cada projeto.
           </p>
         </section>
 
@@ -141,15 +96,15 @@ export default function ProjectsPage() {
         {/* CTA Section */}
         <section className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mt-20">
           <div className="bg-gradient-to-r from-blue-900/30 to-emerald-900/30 border border-blue-500/30 rounded-xl p-12 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">Interested in Collaborating?</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Interessado em colaborar?</h2>
             <p className="text-slate-300 mb-8">
-              Let's discuss your data engineering needs and how I can help scale your data infrastructure.
+              Vamos discutir suas necessidades em engenharia de dados e como posso ajudar a escalar sua infraestrutura de dados.
             </p>
             <a
-              href="mailto:contact@dataengineer.com"
+              href="eriklopesp.ti@gmail.com"
               className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
             >
-              Get in Touch
+              Entre em contato!
             </a>
           </div>
         </section>
@@ -158,7 +113,7 @@ export default function ProjectsPage() {
       {/* Footer */}
       <footer className="border-t border-slate-800 px-6 md:px-12 lg:px-16 py-12 mt-20">
         <div className="max-w-6xl mx-auto text-center text-slate-400 text-sm">
-          © 2025 Data Engineer Portfolio. All rights reserved.
+          © 2025 Erik Portfolio. All rights reserved.
         </div>
       </footer>
     </div>

@@ -9,7 +9,6 @@ const _inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Data Engineer Portfolio",
   description: "Professional portfolio of a Data Engineer specializing in data architecture and analytics",
-  generator: "v0.app",
   icons: {
     icon: [
       {
