@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       image: "/Green Orange White Modern Group Project Presentation.jpg",
       github: "https://github.com/eriklopesp/pipeline-gov_transparencia",
       demo: "https://example.com",
-      metrics: ["1M+ events/sec", "99.99% uptime", "< 100ms latency"],
+      metrics: ["Update real-time", "CI/CD", "< 100ms latency"],
     },
     {
       id: 2,
