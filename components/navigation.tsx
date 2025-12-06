@@ -16,7 +16,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
     { label: "Sobre", href: "#about" },
     { label: "Habilidades", href: "#skills" },
     { label: "Experiências", href: "#experience" },
-    // { label: "Projects", href: "#projects" },
+    { label: "Projetos", href: "#projects" },
     { label: "Contato", href: "#contact" },
   ]
 

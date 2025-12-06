@@ -18,36 +18,53 @@ interface Project {
 }
 
 export default function ProjectsPage() {
-  const [activeFilter, setActiveFilter] = useState("all")
+  const [activeFilter, setActiveFilter] = useState("Todos")
 
   const projects: Project[] = [
     {
       id: 1,
-      title: "Real-time Data Pipeline",
-      description: "High-throughput data ingestion system processing 1M+ events per second",
+      title: "pipeline-gov_transparencia",
+      description: "Arquitetura de dados em Cloud, com transferências ACID e CI/CD, seguindo as melhores práticas atuais do mercado para micro serviços em nuvem, com governança e rastreabilidade.",
       fullDescription:
         "Built a production-grade real-time data pipeline handling 1M+ events per second using Apache Kafka, Apache Spark Structured Streaming, and AWS infrastructure. Implemented data quality checks, monitoring, and alerting systems.",
-      technologies: ["Kafka", "Apache Spark", "Python", "AWS", "Docker", "Redis"],
-      image: "/data-pipeline-visualization.png",
-      github: "https://github.com",
+      technologies: ["Lambda", "Apache Spark", "Python", "S3", "Databricks"],
+      image: "/Green Orange White Modern Group Project Presentation.jpg",
+      github: "https://github.com/eriklopesp/pipeline-gov_transparencia",
       demo: "https://example.com",
       metrics: ["1M+ events/sec", "99.99% uptime", "< 100ms latency"],
     },
     {
       id: 2,
-      title: "Cloud Data Warehouse",
-      description: "Scalable multi-tenant data warehouse on Google BigQuery",
+      title: "Portfolio HTML + CSS",
+      description: "Portfolio desenvolvido por mim, sem auxilio de IA's, utilizando apenas HTML e CSS puro.",
       fullDescription:
         "Designed and implemented a multi-tenant data warehouse using Google BigQuery with optimized schemas, partitioning strategies, and cost optimization. Reduced query times by 75% and cut infrastructure costs by 40%.",
-      technologies: ["BigQuery", "SQL", "dbt", "Terraform", "Python", "Looker"],
-      image: "/data-warehouse-architecture.png",
-      github: "https://github.com",
-      metrics: ["75% query time reduction", "40% cost savings", "500B+ records"],
+      technologies: ["HTML", "CSS"],
+      image: "/portfolio_html.png",
+      github: "https://github.com/eriklopesp/Portfolio",
+    },
+    {
+      id: 3,
+      title: "Portfolio Professional - React + TailwindCSS",
+      description: "Portfolio desenvolvido com auxilio do v0, utilizando React + TailwindCSS.",
+      fullDescription:
+        "Designed and implemented a multi-tenant data warehouse using Google BigQuery with optimized schemas, partitioning strategies, and cost optimization. Reduced query times by 75% and cut infrastructure costs by 40%.",
+      technologies: ["Node", "React", "TailwindCSS","Vercel","GitHub","CSS"],
+      image: "/Captura de tela 2025-12-05 225141.png",
+      github: "https://github.com/eriklopesp/Portfolio-Profissional",
     },
   ]
 
-  const technologies = ["Todos", "Python", "SQL", "Spark", "AWS", "GCP", "Docker"]
-  const filteredProjects = projects
+  const technologies = ["Todos", "Python", "SQL", "Spark", "AWS", "GCP", "React","HTML", "CSS", "TailwindCSS","Databricks","Lambda"]
+
+  const filteredProjects = projects.filter((project) => {
+    if (activeFilter === "Todos") return true
+    return project.technologies.some(
+      (tech) =>
+        tech.toLowerCase().includes(activeFilter.toLowerCase()) ||
+        activeFilter.toLowerCase().includes(tech.toLowerCase()),
+    )
+  })
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
@@ -101,7 +118,7 @@ export default function ProjectsPage() {
               Vamos discutir suas necessidades em engenharia de dados e como posso ajudar a escalar sua infraestrutura de dados.
             </p>
             <a
-              href="eriklopesp.ti@gmail.com"
+              href="mailto:eriklopesp.ti@gmail.com"
               className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
             >
               Entre em contato!
@@ -123,17 +140,19 @@ export default function ProjectsPage() {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="bg-slate-900 border border-slate-800 rounded-lg overflow-hidden hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 group">
-      <div className="relative h-48 bg-gradient-to-br from-blue-900/20 to-emerald-900/20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-emerald-600 opacity-0 group-hover:opacity-10 transition-opacity"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-12 h-12 bg-blue-600/20 rounded-lg mx-auto mb-2 flex items-center justify-center">
-              <span className="text-blue-400">📊</span>
-            </div>
-            <p className="text-slate-400 text-sm">{project.technologies[0]}</p>
-          </div>
-        </div>
+      <div className="relative h-48 overflow-hidden">
+        {/* Imagem ocupando toda a largura */}
+        <img
+          src={project.image}
+          alt={project.title}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Overlay de hover (mantido) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/40 to-emerald-600/40 opacity-0 group-hover:opacity-40 transition-opacity"></div>
       </div>
+
+      <p className="text-slate-400 text-sm mt-2">{project.technologies[0]}</p>
 
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">

@@ -50,7 +50,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    <span className="text-slate-400 text-sm">Data Warehouse | ETL | Pipeline</span>
+                    <span className="text-slate-400 text-sm">Data Warehouse | Data Lakehouse | ETL | Pipelines</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
@@ -58,7 +58,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-slate-400 text-sm">Analytics | BI Tools | Optimization</span>
+                    <span className="text-slate-400 text-sm">Analytics | Power BI | Numpy </span>
                   </div>
                 </div>
               </div>
@@ -88,11 +88,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Linguagens", skills: ["Python", "SQL", "PySpark", "JavaScript"] },
-              { title: "Data Platforms", skills: ["Apache Spark", "Hadoop", "Kafka", "Databricks"] },
-              { title: "Cloud Services", skills: ["AWS", "Google Cloud", "Azure"] },
-              { title: "Data Warehousing", skills: ["BigQuery", "Redshift", "Postgres"] }, 
+              { title: "Data Platforms", skills: ["Apache Spark", "Kafka", "Databricks"] },
+              { title: "Cloud Services", skills: ["AWS", "Google Cloud"] },
+              { title: "Data Warehousing", skills: ["BigQuery", "MySQL", "Postgres","Ansi SQL"] }, 
               { title: "BI & Analytics", skills: ["Looker", "Power BI", "Grafana"] },
-              { title: "Tools & Frameworks", skills: ["dbt", "Airflow", "Docker", "Git"] },
+              { title: "Tools & Frameworks", skills: ["dbt", "Airflow", "Docker", "Git","Lambda"] },
             ].map((category, idx) => (
               <div
                 key={idx}
@@ -150,32 +150,32 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        {/* <section id="projects" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
+        <section id="projects" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
           <div className="flex items-center justify-between mb-12">
             <h2 className="text-3xl font-bold text-white">Projetos em destaque</h2>
             <Link
               href="/projects"
               className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold group"
             >
-              View All <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              Ver Todos <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                title: "Real-time Data Pipeline",
+                title: "pipeline-gov_transparencia",
                 description:
-                  "Built a high-throughput data ingestion pipeline processing 1M+ events per second using Kafka and Apache Spark.",
+                  "Arquitetura de dados em Cloud, com transferências ACID e CI/CD, seguindo as melhores práticas atuais do mercado para micro serviços em nuvem, com governança e rastreabilidade.",
                 technologies: ["Kafka", "Spark", "Python", "AWS"],
-                link: "#",
+                link: "https://github.com/eriklopesp/pipeline-gov_transparencia",
               },
               {
-                title: "Cloud Data Warehouse",
+                title: "Portfolio Professional - React + TailwindCSS",
                 description:
-                  "Designed and implemented a scalable data warehouse on Google BigQuery with optimized schemas and cost reduction strategies.",
-                technologies: ["BigQuery", "SQL", "dbt", "Terraform"],
-                link: "#",
+                  "Portfolio desenvolvido com auxilio do v0, utilizando React + TailwindCSS.",
+                technologies: ["Node", "React", "TailwindCSS","Vercel","GitHub","CSS"],
+                link: "https://github.com/eriklopesp/Portfolio-Profissional",
               },
             ].map((project, idx) => (
               <div
@@ -197,12 +197,12 @@ export default function Home() {
                   href="/projects"
                   className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  See More <ExternalLink size={16} />
+                  Veja mais <ExternalLink size={16} />
                 </Link>
               </div>
             ))}
           </div>
-        </section> */}
+        </section>
 
         {/* CTA Section */}
         <section id="contact" className="px-6 md:px-12 lg:px-16 max-w-6xl mx-auto mb-20">
@@ -213,7 +213,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a
-                href="eriklopesp.ti@gmail.com"
+                href="mailto:eriklopesp.ti@gmail.com"
                 className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors flex items-center gap-2"
               >
                 <Mail size={20} /> E-mail
@@ -242,7 +242,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/eriklopesp/" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="#" className="text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:eriklopesp.ti@gmail.com" className="text-slate-400 hover:text-white transition-colors">
               <Mail size={20} />
             </a>
           </div>
