@@ -141,7 +141,7 @@ export default function Home() {
                   "Construção de storytelling com dados utilizando Power BI, Matplotlib e Plotly.",
                   "Automação de relatórios com disparos diários."
                 ]
-              }
+              },
               {
                 title: "Business Intelligence Assistant",
                 company: "Allis Field Marketing",
