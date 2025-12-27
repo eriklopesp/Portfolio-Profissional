@@ -28,10 +28,10 @@ export default function ProjectsPage() {
       fullDescription:
         "Built a production-grade real-time data pipeline handling 1M+ events per second using Apache Kafka, Apache Spark Structured Streaming, and AWS infrastructure. Implemented data quality checks, monitoring, and alerting systems.",
       technologies: ["Lambda", "Apache Spark", "Python", "S3", "Databricks"],
-      image: "/Green Orange White Modern Group Project Presentation.jpg",
+      image: "/forecast_mensal.png",
       github: "https://github.com/eriklopesp/pipeline-gov_transparencia",
       demo: "https://example.com",
-      metrics: ["Update real-time", "CI/CD", "< 100ms latency"],
+      metrics: ["Pipeline via Job Run", "CI/CD", "< 100ms latency","API Portal da Transparencia"],
     },
     {
       id: 2,
