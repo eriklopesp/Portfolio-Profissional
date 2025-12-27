@@ -27,11 +27,11 @@ export default function ProjectsPage() {
       description: "Arquitetura de dados em Cloud, com transferências ACID e CI/CD, seguindo as melhores práticas atuais do mercado para micro serviços em nuvem, com governança e rastreabilidade.",
       fullDescription:
         "Built a production-grade real-time data pipeline handling 1M+ events per second using Apache Kafka, Apache Spark Structured Streaming, and AWS infrastructure. Implemented data quality checks, monitoring, and alerting systems.",
-      technologies: ["Lambda", "Apache Spark", "Python", "S3", "Databricks"],
+      technologies: ["Apache Spark", "Python", "S3", "Databricks"],
       image: "/forecast_mensal.png",
       github: "https://github.com/eriklopesp/pipeline-gov_transparencia",
       demo: "https://example.com",
-      metrics: ["Pipeline via Job Run", "CI/CD", "< 100ms latency","API Portal da Transparencia"],
+      metrics: ["Pipeline via Databricks", "CI/CD", "Gastos públicos","API Portal da Transparencia"],
     },
     {
       id: 2,
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
     },
   ]
 
-  const technologies = ["Todos", "Python", "SQL", "Spark", "AWS", "GCP", "React","HTML", "CSS", "TailwindCSS","Databricks","Lambda"]
+  const technologies = ["Todos", "Python", "SQL", "Spark", "S3", "GCP", "React","HTML", "CSS", "TailwindCSS","Databricks", "Power BI"]
 
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === "Todos") return true
@@ -187,16 +187,6 @@ function ProjectCard({ project }: { project: Project }) {
               className="flex-1 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
             >
               <Github size={16} /> Code
-            </a>
-          )}
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
-            >
-              <ExternalLink size={16} /> Live
             </a>
           )}
         </div>
