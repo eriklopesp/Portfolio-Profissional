@@ -92,7 +92,7 @@ export default function Home() {
               { title: "Cloud Services", skills: ["AWS", "Google Cloud"] },
               { title: "Data Warehousing", skills: ["BigQuery", "MySQL", "Postgres","Ansi SQL"] }, 
               { title: "BI & Analytics", skills: ["Looker", "Power BI", "Grafana"] },
-              { title: "Tools & Frameworks", skills: ["dbt", "Airflow", "Docker", "Git","Lambda"] },
+              { title: "Tools & Frameworks", skills: ["Airflow", "Docker", "Git","Lambda"] },
             ].map((category, idx) => (
               <div
                 key={idx}
