@@ -121,22 +121,40 @@ export default function Home() {
                 title: "Data Analyst II",
                 company: "Grupo PLL",
                 period: "2024 - 2025",
-                description:
-                  "Desenvolvimento de dashboards em Power BI ou Python, utilizando DAX, M ou Numpy para construção de análises de acordo com o contexto. Desenvolvimento de relatórios em MySQL ou Postgres, utilizando conceitos como Tuning SQL visando eficiência/performance de querys, que forneçam suporte a longo prazo em relação a ingestão de dados, que rodem de maneira automatizada sem gerar gargalos em atualizações. Versionamento e governança de códigos no GitHub, com documentação que evidencia processos e aspectos técnicos da construção de cada solução de dados. Responsável pela construção de pipelines completos, da extração de dados através de API’s, ERP interno ou Banco de Dados, até manipulação através de Python pandas ou MySQL, ingestão e visualização, em métricas de BI para construção de KPI’s que norteie o operacional em suas tomadas de decisão, utilizando a massa de dados como fonte de informação. Participação de meets e kick-offs para alinhamento de estratégias internas, e reuniões com stakeholders para alinhamentos de expectativa/entrega/roadmap.."
+                description: [
+                  "Estruturação de pipelines de dados com foco em governança e escalabilidade, utilizando a arquitetura Medallion.",
+                  "Desenvolvimento de Data Lakehouses com armazenamento em Delta no S3, utilizando particionamento por data.",
+                  "Governança de IAM Roles e segurança de acesso.",
+                  "CI/CD através de Jobs e Roles.",
+                  "Versionamento de código via GitHub.",
+                  "Desenvolvimento de análises e métricas para BI utilizando SQL, Power BI e Python."
+                ]
               },
               {
                 title: "Business Intelligence Analyst",
                 company: "MarcoMKT",
                 period: "2022 - 2024",
-                description:
-                  "Líder técnico do BI da Brother Brasil, responsável pela melhoria contínua de processos comerciais e criação de storytellings visuais com ferramentas de DataViz. Eu tinha uma participação muito ativa nas decisões de negócio, o foco era embasar tomadas de decisão e orientar de maneira documentada os processos operacionais e administrativos com agregações e análises que gerassem insights de caráter decisório. Análises comparativas, de propensão, gráfico de pareto, estatística, entre outros métodos para criação de KPI’s estratégicos que suportava a operação. Para além da parte conceitual, a parte técnica para a construção desses relatórios envolvia muito SQL Server, Python (Pandas), Linguagem M, Power BI (DAX) e API’S para extração de dados. Todo o processo de manipulação de dados, carregamento e disponibilização em banco era feito via SQL Server e Python, de acordo com cada necessidade.",
-              },
+                description: [
+                  "Criação e desenvolvimento de métricas como OKRs e PDIs para maximização de resultados dos executivos de vendas.",
+                  "Análises com regressão linear, desvio padrão e médias para criação de forecast, planejamento estratégico e avaliação de performance das campanhas de Trade Marketing.",
+                  "Monitoramento e acompanhamento de mercado aliado a dados históricos para construção de campanhas no ponto de venda, considerando dados quantitativos e qualitativos.",
+                  "Construção de storytelling com dados utilizando Power BI, Matplotlib e Plotly.",
+                  "Automação de relatórios com disparos diários."
+                ]
+              }
               {
                 title: "Business Intelligence Assistant",
                 company: "Allis Field Marketing",
                 period: "2021 - 2022",
-                description:
-                  "Apoio em projetos de automação de dashboards, criação de pesquisas em sistemas de roteirização e relatórios analíticos em SQL, Excel, Power BI com foco em insights operacionais. Suporte em modelagem e qualidade de dados, garantindo consistência e normalização. Assistência ao Analista de BI em demandas de tratamento de dados e estruturação de métricas.",
+                description: [
+                  "Apoio em projetos de automação de dashboards e transição de dados locais para ambiente cloud.",
+
+                  "Criação de pesquisas, relatórios analíticos em Excel e Power BI, coleta de dados e documentação de desenvolvimento.",
+
+                  "Desenvolvimento de querys para construção de bases analíticas.",
+
+                  "Desenvolvimento de Macros e automações com VBA",
+                ]  
               },
             ].map((exp, idx) => (
               <div key={idx} className="border-l-2 border-blue-600 pl-6 py-2">
@@ -167,7 +185,7 @@ export default function Home() {
                 title: "pipeline-gov_transparencia",
                 description:
                   "Arquitetura de dados em Cloud, com transferências ACID e CI/CD, seguindo as melhores práticas atuais do mercado para micro serviços em nuvem, com governança e rastreabilidade.",
-                technologies: ["Kafka", "Spark", "Python", "AWS"],
+                technologies: ["Databricks", "Spark", "Python", "AWS S3"],
                 link: "https://github.com/eriklopesp/pipeline-gov_transparencia",
               },
               {
