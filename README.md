@@ -9,7 +9,7 @@
 Este é o meu **portfólio profissional online**, construído para apresentar minha trajetória, habilidades e projetos como Engenheiro de Dados.  
 Ele foi desenvolvido com foco em clareza, usabilidade e estética, com links diretos para meus projetos e canais de contato.
 
-O objetivo é mostrar meu **nível técnico e capacidade de entrega**, além de ser uma vitrine do que posso trazer para equipes e projetos reais. :contentReference[oaicite:0]{index=0}
+O objetivo é mostrar meu **nível técnico e capacidade de entrega**, além de ser uma vitrine do que posso trazer para equipes e projetos reais.
 
 ---
 
@@ -21,26 +21,26 @@ Esse site foi construído com:
 🎨 **Tailwind CSS**  
 ⚡ **Deploy via Vercel**
 
-💡 Arquitetura moderna, responsiva e otimizada para performance. :contentReference[oaicite:1]{index=1}
+💡 Arquitetura moderna, responsiva e otimizada para performance.
 
 ---
 
 ## 📌 Seções do Portfólio
 
 ### 🧑‍💻 Sobre Mim  
-Apresento minha jornada profissional e competências como Engenheiro de Dados. :contentReference[oaicite:2]{index=2}
+Apresento minha jornada profissional e competências como Engenheiro de Dados. 
 
 ### 🛠️ Habilidades  
-Lista com minhas principais habilidades e ferramentas que domino (Python, SQL, Spark, AWS, Databricks, Power BI, etc.). :contentReference[oaicite:3]{index=3}
+Lista com minhas principais habilidades e ferramentas que domino (Python, SQL, Spark, AWS, Databricks, Power BI, etc.). 
 
 ### 💼 Experiências  
-Resumo das minhas experiências profissionais mais relevantes. :contentReference[oaicite:4]{index=4}
+Resumo das minhas experiências profissionais mais relevantes.
 
 ### 📂 Projetos  
-Projetos em destaque com links e descrições para cada um deles. :contentReference[oaicite:5]{index=5}
+Projetos em destaque com links e descrições para cada um deles.
 
 ### ✉️ Contato  
-Formas de me encontrar — LinkedIn, e-mail, GitHub. :contentReference[oaicite:6]{index=6}
+Formas de me encontrar — LinkedIn, e-mail, GitHub.
 
 ---
 
