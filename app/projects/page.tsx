@@ -152,7 +152,7 @@ function ProjectCard({ project }: { project: Project }) {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/40 to-emerald-600/40 opacity-0 group-hover:opacity-40 transition-opacity"></div>
       </div>
 
-      <p className="text-slate-400 text-sm mt-2">{project.technologies[0]}</p>
+      {/* <p className="text-slate-400 text-sm mt-2">{project.technologies[0]}</p> */}
 
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
@@ -171,6 +171,7 @@ function ProjectCard({ project }: { project: Project }) {
               </span>
             ))}
           </div>
+        </div>
 
         {project.metrics && (
           <div className="grid grid-cols-3 gap-2 mb-6 p-3 bg-slate-800/50 rounded">
