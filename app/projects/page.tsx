@@ -27,7 +27,7 @@ export default function ProjectsPage() {
       description: "Arquitetura de dados em Cloud, com transferências ACID e CI/CD, seguindo as melhores práticas atuais do mercado para micro serviços em nuvem, com governança e rastreabilidade.",
       fullDescription:
         "Built a production-grade real-time data pipeline handling 1M+ events per second using Apache Kafka, Apache Spark Structured Streaming, and AWS infrastructure. Implemented data quality checks, monitoring, and alerting systems.",
-      technologies: ["Apache Spark", "Python", "S3", "Databricks"],
+      technologies: ["Apache Spark", "Python", "S3", "Databricks","Power BI","CI/CD","API REST"],
       image: "/forecast_mensal.png",
       github: "https://github.com/eriklopesp/pipeline-gov_transparencia",
       demo: "https://example.com",
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
       description: "Portfolio desenvolvido por mim, sem auxilio de IA's, utilizando apenas HTML e CSS puro.",
       fullDescription:
         "Designed and implemented a multi-tenant data warehouse using Google BigQuery with optimized schemas, partitioning strategies, and cost optimization. Reduced query times by 75% and cut infrastructure costs by 40%.",
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "GitHub Pages"],
       image: "/portfolio_html.png",
       github: "https://github.com/eriklopesp/Portfolio",
     },
