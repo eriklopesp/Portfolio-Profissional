@@ -156,14 +156,19 @@ export default function Home() {
                   "Desenvolvimento de Macros e automações com VBA",
                 ]  
               },
-            ].map((exp, idx) => (
-              <div key={idx} className="border-l-2 border-blue-600 pl-6 py-2">
-                <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
-                <p className="text-blue-400 text-sm">{exp.company}</p>
-                <p className="text-slate-500 text-xs mb-2">{exp.period}</p>
-                <p className="text-slate-300">{exp.description}</p>
-              </div>
-            ))}
+              ].map((exp, idx) => (
+                <div key={idx} className="border-l-2 border-blue-600 pl-6 py-2">
+                  <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
+                  <p className="text-blue-400 text-sm">{exp.company}</p>
+                  <p className="text-slate-500 text-xs mb-3">{exp.period}</p>
+
+                  <ul className="list-disc pl-5 space-y-2 text-slate-300">
+                    {exp.description.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
           </div>
         </section>
 
