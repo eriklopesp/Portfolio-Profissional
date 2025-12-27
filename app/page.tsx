@@ -58,7 +58,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    <span className="text-slate-400 text-sm">Analytics | Power BI | Numpy </span>
+                    <span className="text-slate-400 text-sm">Analytics | Power BI | Numpy | React + Tailwinds </span>
                   </div>
                 </div>
               </div>
@@ -118,21 +118,21 @@ export default function Home() {
           <div className="space-y-8">
             {[
               {
-                title: "Analista de Dados PL",
+                title: "Data Analyst II",
                 company: "Grupo PLL",
                 period: "2024 - 2025",
                 description:
                   "Desenvolvimento de dashboards em Power BI ou Python, utilizando DAX, M ou Numpy para construção de análises de acordo com o contexto. Desenvolvimento de relatórios em MySQL ou Postgres, utilizando conceitos como Tuning SQL visando eficiência/performance de querys, que forneçam suporte a longo prazo em relação a ingestão de dados, que rodem de maneira automatizada sem gerar gargalos em atualizações. Versionamento e governança de códigos no GitHub, com documentação que evidencia processos e aspectos técnicos da construção de cada solução de dados. Responsável pela construção de pipelines completos, da extração de dados através de API’s, ERP interno ou Banco de Dados, até manipulação através de Python pandas ou MySQL, ingestão e visualização, em métricas de BI para construção de KPI’s que norteie o operacional em suas tomadas de decisão, utilizando a massa de dados como fonte de informação. Participação de meets e kick-offs para alinhamento de estratégias internas, e reuniões com stakeholders para alinhamentos de expectativa/entrega/roadmap.."
               },
               {
-                title: "Analista de Business Intelligence",
+                title: "Business Intelligence Analyst",
                 company: "MarcoMKT",
                 period: "2022 - 2024",
                 description:
                   "Líder técnico do BI da Brother Brasil, responsável pela melhoria contínua de processos comerciais e criação de storytellings visuais com ferramentas de DataViz. Eu tinha uma participação muito ativa nas decisões de negócio, o foco era embasar tomadas de decisão e orientar de maneira documentada os processos operacionais e administrativos com agregações e análises que gerassem insights de caráter decisório. Análises comparativas, de propensão, gráfico de pareto, estatística, entre outros métodos para criação de KPI’s estratégicos que suportava a operação. Para além da parte conceitual, a parte técnica para a construção desses relatórios envolvia muito SQL Server, Python (Pandas), Linguagem M, Power BI (DAX) e API’S para extração de dados. Todo o processo de manipulação de dados, carregamento e disponibilização em banco era feito via SQL Server e Python, de acordo com cada necessidade.",
               },
               {
-                title: "Assistente de Business Intelligence",
+                title: "Business Intelligence Assistant",
                 company: "Allis Field Marketing",
                 period: "2021 - 2022",
                 description:
