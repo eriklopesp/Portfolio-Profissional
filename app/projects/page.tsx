@@ -160,13 +160,17 @@ function ProjectCard({ project }: { project: Project }) {
         </h3>
         <p className="text-slate-400 mb-4">{project.description}</p>
 
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.technologies.map((tech, idx) => (
-            <span key={idx} className="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full">
-              {tech}
-            </span>
-          ))}
-        </div>
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.technologies.map((tech, idx) => (
+              <span
+                key={idx}
+                className="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
 
         {project.metrics && (
           <div className="grid grid-cols-3 gap-2 mb-6 p-3 bg-slate-800/50 rounded">
@@ -192,5 +196,6 @@ function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
     </div>
+  </div>
   )
 }
