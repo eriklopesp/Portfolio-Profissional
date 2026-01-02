@@ -88,7 +88,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Linguagens", skills: ["Python", "SQL", "PySpark", "JavaScript"] },
-              { title: "Data Platforms", skills: ["Apache Spark", "Kafka", "Databricks"] },
+              { title: "Data Platforms", skills: ["Google Cloud", "Databricks", "AWS Services"] },
               { title: "Cloud Services", skills: ["AWS", "Google Cloud"] },
               { title: "Data Warehousing", skills: ["BigQuery", "MySQL", "Postgres","Ansi SQL"] }, 
               { title: "BI & Analytics", skills: ["Looker", "Power BI", "Grafana"] },
@@ -122,12 +122,12 @@ export default function Home() {
                 company: "Grupo PLL",
                 period: "2024 - 2025",
                 description: [
-                  "Estruturação de pipelines de dados com foco em governança e escalabilidade, utilizando a arquitetura Medallion.",
-                  "Desenvolvimento de Data Lakehouses com armazenamento em Delta no S3, utilizando particionamento por data.",
-                  "Governança de IAM Roles e segurança de acesso.",
-                  "CI/CD através de Jobs e Roles.",
-                  "Versionamento de código via GitHub.",
-                  "Desenvolvimento de análises e métricas para BI utilizando SQL, Power BI e Python."
+                  "Estruturação de processos transacionais de dados utilizando AWS Lambda e MySQL.",
+                  "Desenvolvimento de Data Warehouses com fins analíticos em modelos Star-Schema ou Cubo OLAP através de objetos JSON_RAW.",
+                  "Governança de Catálogo e acessos.",
+                  "CI/CD através de Crons e Procedures.",
+                  "Implementação de versionamento de código e política de merge para ambiente de produção via GitHub.",
+                  "Desenvolvimento de análises e métricas para inteligência de negócios em SQL/Power BI/Python."
                 ]
               },
               {
@@ -135,11 +135,11 @@ export default function Home() {
                 company: "MarcoMKT",
                 period: "2022 - 2024",
                 description: [
-                  "Criação e desenvolvimento de métricas como OKRs e PDIs para maximização de resultados dos executivos de vendas.",
-                  "Análises com regressão linear, desvio padrão e médias para criação de forecast, planejamento estratégico e avaliação de performance das campanhas de Trade Marketing.",
-                  "Monitoramento e acompanhamento de mercado aliado a dados históricos para construção de campanhas no ponto de venda, considerando dados quantitativos e qualitativos.",
-                  "Construção de storytelling com dados utilizando Power BI, Matplotlib e Plotly.",
-                  "Automação de relatórios com disparos diários."
+                  "Criação e desenvolvimento de métricas como Curva ABC e PDI’s para maximização de resultados dos executivos de vendas.",
+                  "Análises com regressão linear, desvio padrão e médias para criação de forecast, planejamento estratégico, e avaliação de performance das campanhas de Trade Marketing.",
+                  "Construção de querys em SQL Server, usando premissas de Tuning SQL, para gerar agregações e bases de dados com suporte a análises de BI e Machine Learning.",
+                  "Construção de Storytelling com dados em Power BI, Python Matplotlib/Plotly.",
+                  "Automações de relatórios com disparos diários."
                 ]
               },
               {
@@ -148,11 +148,8 @@ export default function Home() {
                 period: "2021 - 2022",
                 description: [
                   "Apoio em projetos de automação de dashboards e transição de dados locais para ambiente cloud.",
-
-                  "Criação de pesquisas, relatórios analíticos em Excel e Power BI, coleta de dados e documentação de desenvolvimento.",
-
-                  "Desenvolvimento de querys para construção de bases analíticas.",
-
+                  "Criação de pesquisas, relatórios analíticos em Excel e Power BI, coleta e organização de dados.",
+                  "Desenvolvimento de querys para construção de bases analíticas no Big Query e dax para métricas de negócio.",
                   "Desenvolvimento de Macros e automações com VBA",
                 ]  
               },
